@@ -14,7 +14,7 @@ Install
 
 ```
 # clone repository
-git clone git@gitlab.wachter-jud.net:docker/apache-static.git
+git clone https://github.com/open-comm/apache-static.git
 
 # move into directory
 cd apache-static
@@ -22,13 +22,12 @@ cd apache-static
 # create www directory where your static web page files go
 mkdir www
 
-# copy and edit the sample configuration file
-cp docker-compose.yml.sample docker-compose.yml
+# copy and edit the sample environment file
+cp sample.env .env
+
+## open the .env file in a text editor and configure all
+## values to your needs: DOMAIN, ROUTERNAME
 ```
-
-Edit docker-compose.yml and change the following value:
-
-* `your.web.domain` the domain name under which this web server will be available
 
 Put all your html files into the `www` directory.
 
